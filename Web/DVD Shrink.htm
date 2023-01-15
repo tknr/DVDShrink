@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>DVD Shrink について</title>
+
+<script language="JavaScript"><!--
+function loadFrame() {
+   var passed = "" + location.search;
+   if (passed != "" && passed !="undefined") top.main.location = passed.substring(1);
+   else top.main.location = "Introduction.htm";
+}
+//--></script>
+
+</head>
+
+<frameset cols="160,*" onLoad="top.loadFrame()" framespacing="0" border="false" frameborder="0">
+  <frame name="contents" src="Contents.htm" scrolling="no" noresize>
+  <frame name="main" src="javascript:' '" scrolling="auto">
+  <noframes>
+  <body>
+  <p>このページはフレームを使用しています。ご使用のブラウザはフレームをサポートしていません。</p>
+  </body>
+  </noframes>
+</frameset>
+</html>
